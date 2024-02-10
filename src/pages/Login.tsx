@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 const Login = () => {
     function handleClick() {
         const options = {
-            client_id: "0d3ed84ecf7c4076af9d45c447dcc808",
-            redirect_uri: "http://localhost:5173",
+            client_id: import.meta.env.VITE_CLIENT_ID,
+            redirect_uri: import.meta.env.VITE_SPOTIFY_REDIRECT_URI,
             response_type: "token",
             state: Math.floor(Math.random() * 5000 + 50),
             show_dialog: false,

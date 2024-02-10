@@ -12,7 +12,7 @@ const store = configureStore({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <Provider store={store}>
-        <BrowserRouter basename="/Spotify-clone">
+        <BrowserRouter basename={import.meta.env.VITE_ROUTER_BASE_URI}>
             <App />
         </BrowserRouter>
     </Provider>
