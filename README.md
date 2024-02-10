@@ -3,7 +3,7 @@ this app is made with the help of spotify api. Huge shoutout to spotify, make su
 
 # Guide
 
-You have to get a client id from Spotify dashboard and then change it in .env file. You can't access the Clone app without a client id
+You have to get a Client ID from Spotify dashboard and then change it in .env file. You can't login to the Clone app without your own Client ID
 
 ## Step 1
 Login to your spotify account from https://developer.spotify.com/
@@ -12,7 +12,7 @@ Login to your spotify account from https://developer.spotify.com/
 Navigate to spotify dashboard https://developer.spotify.com/dashboard and Create a new app with redirect uri http://localhost:5173 make sure to click the **Web API** checkbox. after creating the new app, navigate to settings from top right and then copy the Client ID
 
 ## Step 3
-download this repository and then inside .env file, change the client id with your own.
+download this repository and then inside .env file, change the Client ID with your own.
 
 ## Step 4
 run the following commands in terminal (make sure that you have nodejs installed)
