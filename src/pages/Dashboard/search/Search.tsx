@@ -3,7 +3,7 @@ import spotify from "@/utils/spotify";
 import { useEffect, useRef, useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import Songs from "./Songs";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import queryString from "query-string";
 
 const Search = () => {
