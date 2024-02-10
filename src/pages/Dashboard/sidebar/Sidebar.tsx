@@ -2,9 +2,9 @@ import { BiSearch } from "react-icons/bi";
 import { IoHome } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import MyPlaylist from "./MyPlaylist";
-import { memo, useEffect, useState } from "react";
+import { useEffect } from "react";
 import spotify from "../../../utils/spotify";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
     const playlists = useSelector((state: any) => state.playlists);
