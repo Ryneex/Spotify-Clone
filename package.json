@@ -3,12 +3,11 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://ryneex.github.io/Spotify-clone/",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -d dist",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
     },
