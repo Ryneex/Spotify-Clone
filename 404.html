@@ -3,12 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <script>
-            const redirect = sessionStorage.redirect;
-            delete sessionStorage.redirect;
-            if (redirect && redirect != location.href) {
+            (function () {
                 alert(redirect);
-                history.replaceState(null, null, redirect);
-            }
+                const redirect = sessionStorage.redirect;
+                delete sessionStorage.redirect;
+                if (redirect && redirect != location.href) {
+                    console.log(redirect);
+                    history.replaceState(null, null, redirect);
+                }
+            })();
         </script>
         <title>Document</title>
     </head>
