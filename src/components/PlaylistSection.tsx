@@ -11,7 +11,7 @@ const PlaylistSection = ({ data }: { data: FeedPlaylists }) => {
     return (
         <div className="select-none">
             <div className="flex items-center gap-1 mb-5 pr-2">
-                <h2 className="font-medium mr-auto">{data.name}</h2>
+                <h1 className="text-2xl font-medium mr-auto">{data.name}</h1>
                 <IoIosArrowBack
                     size={35}
                     className="cursor-pointer rounded-full hover:bg-zinc-800 p-2"

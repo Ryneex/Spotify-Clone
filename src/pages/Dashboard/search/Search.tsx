@@ -31,7 +31,7 @@ const Search = () => {
     }, [input]);
 
     return (
-        <div className="basis-full flex flex-col min-w-0 bg-zinc-900 rounded-2xl p-5 gap-5">
+        <div className="basis-full text-white flex flex-col min-w-0 bg-zinc-900 rounded-2xl p-5 gap-5">
             <div className={`min-h-12 max-w-[400px] bg-zinc-800 hover:bg-zinc-700/50 rounded-full flex items-center px-4 gap-2 ${outline && "outline"} outline-[2px] outline-zinc-400`}>
                 <IoSearchOutline size={23} />
                 <input

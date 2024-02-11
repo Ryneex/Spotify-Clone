@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 const Feed = () => {
     const feedPlaylists = useSelector((state: any) => state.feedPlaylists);
     return (
-        <div className="basis-full flex flex-col gap-12 min-w-0 bg-zinc-900 rounded-2xl p-5 overflow-auto no-scroll">
+        <div className="basis-full text-white flex flex-col gap-12 min-w-0 bg-zinc-900 rounded-2xl p-5 overflow-auto no-scroll">
             {feedPlaylists.length !== 0 ? (
                 feedPlaylists.map((e: FeedPlaylists, i: number) => (
                     <PlaylistSection

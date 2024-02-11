@@ -23,7 +23,7 @@ const spotify = {
             },
         });
         if (data.status != 200) {
-            localStorage.clear();
+            localStorage.removeItem("access_token");
             return { ...data, failed: true };
         }
         return await data.json();
@@ -36,7 +36,7 @@ const spotify = {
             },
         });
         if (data.status != 200) {
-            localStorage.clear();
+            localStorage.removeItem("access_token");
             return { ...data, failed: true };
         }
         return await data.json();
@@ -49,7 +49,7 @@ const spotify = {
             },
         });
         if (data.status != 200) {
-            localStorage.clear();
+            localStorage.removeItem("access_token");
             return { ...data, failed: true };
         }
         return await data.json();

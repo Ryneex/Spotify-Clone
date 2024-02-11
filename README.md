@@ -3,23 +3,19 @@ this app is made with the help of spotify api. Huge shoutout to spotify, make su
 
 ## Guide
 
-You have to get a Client ID from Spotify dashboard and then change it in .env file. You can't login to the Clone app without your own Client ID
+You have to get a Client ID from Spotify dashboard. You can't login to the App without your own Client ID
 
 ### Step 1
 Login to your spotify account from https://developer.spotify.com/
 
 ### Step 2
-Navigate to spotify dashboard https://developer.spotify.com/dashboard and Create a new app with redirect uri http://localhost:5173 make sure to click the **Web API** checkbox. after creating the new app, navigate to settings from top right and then copy the Client ID
+Navigate to spotify dashboard https://developer.spotify.com/dashboard and Create a new app with **Redirect URI** ```https://ryneex.github.io/Spotify-Clone/```. make sure to click the **Web API** checkbox. after creating the new app, navigate to settings from top right and then copy the Client ID
 
 ### Step 3
-download this repository and then inside .env file, change the Client ID with your own.
+Go to my Clone App https://ryneex.github.io/Spotify-Clone. click on the **Client ID** button from top left and save your Client ID that you copied
 
-## Step 4
-run the following commands in terminal (make sure that you have nodejs installed)
-
-```npm install```
-
-```npm run dev```
+### Step 4
+All is done. now you can login
 
 
 

@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    @apply m-0 p-0 text-white font-sans no-underline box-border border-0
-}
-
-button, a {
-    @apply cursor-pointer
-}
-
 .no-scroll::-webkit-scrollbar {
     @apply hidden
 }

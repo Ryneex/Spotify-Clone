@@ -1,10 +1,19 @@
-import spotify from "../utils/spotify";
+import spotify from "../../utils/spotify";
 import { Button } from "@/components/ui/button";
+import cliendId from "@/utils/clientId";
+import { Toaster, toast } from "sonner";
+import SaveClient from "./SaveClient";
 
 const Login = () => {
     function handleClick() {
+        if (!cliendId()) {
+            toast.error("Please set a Client ID before login", {
+                important: true,
+            });
+            return;
+        }
         const options = {
-            client_id: import.meta.env.VITE_CLIENT_ID,
+            client_id: cliendId(),
             redirect_uri: import.meta.env.VITE_SPOTIFY_REDIRECT_URI,
             response_type: "token",
             state: Math.floor(Math.random() * 5000 + 50),
@@ -13,10 +22,18 @@ const Login = () => {
         };
         spotify.authorize(options);
     }
+
     return (
         <div className="w-screen bg-gray-900 gap-5 h-screen flex flex-col justify-center items-center">
-            <h2 className="font-medium max-w-[400px] text-center">You're not logged in. Please Login with your spotify account</h2>
+            <h2 className="font-medium text-white text-2xl max-w-[400px] text-center">You're not logged in. Please Login with your spotify account</h2>
             <Button onClick={handleClick}>Login with Spotify</Button>
+            <div className="fixed">
+                <Toaster
+                    position="top-center"
+                    richColors
+                />
+            </div>
+            <SaveClient />
         </div>
     );
 };
